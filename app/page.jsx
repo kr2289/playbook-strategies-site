@@ -70,12 +70,19 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="wrap hero-grid">
           <div>
-            <span className="eyebrow on-dark">Strategy. Insight. Growth.</span>
+            <span className="eyebrow on-dark">Katherine Rowe · Playbook Strategies</span>
             <h1>I turn data and insight into decisions that drive growth.</h1>
-            <p>
-              Playbook Strategies helps sports & entertainment organizations
-              find the revenue in their data, with frameworks, measurement
-              systems, and operating models that outlast the engagement.
+            <p className="hero-lead">
+              I&apos;m a strategy and analytics advisor to properties, brands,
+              agencies, tech providers, investors, and athletes across sports
+              &amp; entertainment — with experience across the NFL, F1, the
+              Olympic ecosystem, and enterprise data platforms.
+            </p>
+            <p className="hero-support">
+              Playbook Strategies helps organizations on every side of the deal
+              find the revenue in their data — across ticketing, sponsorship,
+              media, and growth — with frameworks, measurement systems, and
+              operating models that outlast the engagement.
             </p>
             <div className="hero-ctas">
               <a className="btn light" href={`mailto:${EMAIL}`}>
@@ -101,7 +108,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section id="services">
+      <section className="bg-graph-paper" id="services">
         <div className="wrap">
           <span className="eyebrow">What I Do</span>
           <div className="bar" />
@@ -143,7 +150,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="who" id="who">
+      <section className="who bg-graph-paper" id="who">
         <div className="wrap">
           <span className="eyebrow">Who I Work With</span>
           <div className="bar" />
@@ -164,7 +171,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="work" id="work">
+      <section className="work bg-graph-paper" id="work">
         <div className="wrap">
           <span className="eyebrow">Case Studies</span>
           <div className="bar" />
@@ -208,9 +215,12 @@ export default function Home() {
             <div>
               <p className="about-bio">
                 I sit at the intersection of strategy, analytics, and
-                execution. A connector of concepts and people, and a former
-                U.S. Army officer, I lead diverse teams and build the systems
-                organizations keep using long after an engagement ends.
+                execution — connecting concepts, people, and data into work
+                teams can run. A former U.S. Army officer, I&apos;ve led
+                engagements from NFL club ticketing and F1 partnership ROI to
+                Olympic data storytelling and enterprise analytics platforms,
+                and I build systems organizations keep using long after an
+                engagement ends.
               </p>
               <h4>EXPERIENCE</h4>
               <div className="xp">
