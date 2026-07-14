@@ -28,8 +28,6 @@ const caseGroups = [
     cases: [
       ["800k → 1.7M", "Customer Acquisition Strategy", "Customers acquired per year through esports, sweepstakes, sports betting, and media-rights partnerships."],
       ["$15M+", "Ticketing & Sponsorship Revenue Strategy", "Revenue upside identified for a pro sports franchise through fan analytics, pricing, and sponsorship benchmarking."],
-      ["$525K+", "Two-Event Ticketing & Growth Strategy", "New ticketing revenue upside mapped across a two-event fan flywheel, from pricing to premium add-ons."],
-      ["+70%", "Event Value Monetization Strategy", "Increase in ticketing revenue recommended for NBA Summer League through session restructuring and pricing."],
     ],
   },
   {
@@ -37,7 +35,6 @@ const caseGroups = [
     cases: [
       ["< 6 weeks", "Broadcast Integration Strategy & Deliveries", "Branded integrations from concept to on-air across NBC Sports, Paramount ANZ, and a global Formula 1 partnership."],
       ["162M+", "Data Storytelling Strategy", "Impressions driven by a cross-functional data storytelling team across Team USA, Team GB, and Team Germany."],
-      ["ROI", "Partnership Strategy & Valuation", "A defensible methodology linking media valuation to sales pipeline and hospitality return."],
     ],
   },
   {

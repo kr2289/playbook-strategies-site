@@ -462,9 +462,9 @@ h2 {
 }
 
 .case-groups {
-  margin-top: 48px;
+  margin-top: 40px;
   display: grid;
-  gap: 48px;
+  gap: 36px;
 }
 
 .case-group-label {
