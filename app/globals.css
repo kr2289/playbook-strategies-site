@@ -317,14 +317,8 @@ h2 {
   font-size: 18px;
   color: #dce8e0;
   max-width: 580px;
-  margin-bottom: 16px;
-}
-
-.hero-support {
-  font-size: 17px;
-  color: var(--muted);
-  max-width: 580px;
   margin-bottom: 36px;
+  line-height: 1.55;
 }
 
 .hero-ctas {
@@ -586,6 +580,12 @@ h2 {
   letter-spacing: 0.28em;
   color: var(--field);
   margin: 34px 0 16px;
+}
+
+.about-exp {
+  margin-top: 28px;
+  margin-bottom: 34px;
+  text-align: left;
 }
 
 .xp {

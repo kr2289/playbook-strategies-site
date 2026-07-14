@@ -3,6 +3,9 @@ import SiteNav from "./components/SiteNav";
 
 const EMAIL = "katherine@katherinerowe.com";
 
+const POSITIONING =
+  "Strategy and analytics advisor to properties, brands, agencies, tech providers, investors, and athletes across sports & entertainment. I help organizations find revenue in ticketing, sponsorship, media, and growth, with frameworks that outlast the engagement.";
+
 const areas = [
   ["01", "Growth & Customer Acquisition", "Operating models, channel strategy, international expansion, and fan segmentation."],
   ["02", "Partnership & Sponsorship Strategy", "Valuation, benchmarking, asset audits, and ROI models for deals that pay off."],
@@ -72,18 +75,7 @@ export default function Home() {
           <div>
             <span className="eyebrow on-dark">Katherine Rowe · Playbook Strategies</span>
             <h1>I turn data and insight into decisions that drive growth.</h1>
-            <p className="hero-lead">
-              I&apos;m a strategy and analytics advisor to properties, brands,
-              agencies, tech providers, investors, and athletes across sports
-              &amp; entertainment — with experience across the NFL, F1, the
-              Olympic ecosystem, and enterprise data platforms.
-            </p>
-            <p className="hero-support">
-              Playbook Strategies helps organizations on every side of the deal
-              find the revenue in their data — across ticketing, sponsorship,
-              media, and growth — with frameworks, measurement systems, and
-              operating models that outlast the engagement.
-            </p>
+            <p className="hero-lead">{POSITIONING}</p>
             <div className="hero-ctas">
               <a className="btn light" href={`mailto:${EMAIL}`}>
                 Let&apos;s build your playbook
@@ -163,11 +155,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="exp-line">
-            Experience spanning all US major leagues, European football, F1,
-            the Olympic & Paralympic ecosystems, tennis & golf, AFL, NRL, and
-            emerging events.
-          </p>
         </div>
       </section>
 
@@ -215,12 +202,9 @@ export default function Home() {
             <div>
               <p className="about-bio">
                 I sit at the intersection of strategy, analytics, and
-                execution — connecting concepts, people, and data into work
-                teams can run. A former U.S. Army officer, I&apos;ve led
-                engagements from NFL club ticketing and F1 partnership ROI to
-                Olympic data storytelling and enterprise analytics platforms,
-                and I build systems organizations keep using long after an
-                engagement ends.
+                execution. A connector of concepts and people, and a former
+                U.S. Army officer, I lead diverse teams and build the systems
+                organizations keep using long after an engagement ends.
               </p>
               <h4>EXPERIENCE</h4>
               <div className="xp">
@@ -232,6 +216,11 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+              <p className="exp-line about-exp">
+                Experience spanning all US major leagues, European football,
+                F1, the Olympic &amp; Paralympic ecosystems, tennis &amp; golf,
+                AFL, NRL, and emerging events.
+              </p>
               <h4>EDUCATION</h4>
               <div className="edu">
                 <span>
