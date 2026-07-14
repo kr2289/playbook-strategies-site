@@ -15,7 +15,7 @@ Open http://localhost:3000
 
 1. Push this folder to a GitHub repo (or run `npx vercel` from this directory).
 2. In Vercel: **Add New Project → Import** the repo. No configuration needed — Vercel auto-detects Next.js.
-3. Add your domain (e.g. playbookstrategies.com or katherinerowe.com) under **Settings → Domains**.
+3. Add your domain (e.g. playbookstrategies.com or katherinerowe.com) under **Settings → Domains**, then set `NEXT_PUBLIC_SITE_URL` in Vercel env vars to that domain for correct canonical URLs and social previews.
 
 ## Assets
 
@@ -25,6 +25,6 @@ Open http://localhost:3000
 ## Editing content
 
 All copy lives in `app/page.jsx` as small data arrays near the top
-(`areas`, `steps`, `cases`, `who`, `experience`) — edit those to update
-the site without touching layout. Brand colors are CSS variables at the
-top of `app/globals.css`.
+(`areas`, `steps`, `caseGroups`, `who`, `experience`) — edit those to update
+the site without touching layout. Brand colors are CSS variables at the top of
+`app/globals.css`.
