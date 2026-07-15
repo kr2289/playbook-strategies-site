@@ -4,7 +4,7 @@ import SiteNav from "./components/SiteNav";
 const EMAIL = "katherine@katherinerowe.com";
 
 const POSITIONING =
-  "Strategy and analytics advisor to properties, brands, agencies, tech providers, investors, and athletes across sports & entertainment. I help organizations find revenue in ticketing, sponsorship, media, and growth, with frameworks that outlast the engagement.";
+  "Strategy and analytics advisor across the sports & entertainment ecosystem. I help organizations find revenue in ticketing, sponsorship, media, and growth, with frameworks that outlast the engagement.";
 
 const areas = [
   ["01", "Growth & Customer Acquisition", "Operating models, channel strategy, international expansion, and fan segmentation."],
@@ -143,7 +143,7 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">Who I Work With</span>
           <div className="bar" />
-          <h2>Across the ecosystem.</h2>
+          <h2>Across the sports & entertainment ecosystem.</h2>
           <div className="who-grid">
             {who.map(([title, desc]) => (
               <div className="who-card" key={title}>
