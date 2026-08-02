@@ -91,7 +91,7 @@ export default function Home() {
       <div className="value-strip">
         <div className="wrap">
           <p>
-            The value isn&apos;t the analysis.{" "}
+            The value isn&apos;t only the analysis.{" "}
             <em>It&apos;s the framework that remains after the work.</em>
           </p>
         </div>

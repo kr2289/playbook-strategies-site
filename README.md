@@ -17,16 +17,13 @@ Open http://localhost:3000
 2. In Vercel: **Add New Project → Import** the repo. No configuration needed — Vercel auto-detects Next.js.
 3. Add your domain (e.g. playbookstrategies.com or katherinerowe.com) under **Settings → Domains**, then set `NEXT_PUBLIC_SITE_URL` in Vercel env vars to that domain for correct canonical URLs and social previews.
 
-## Temporary password protection
+## Google Analytics
 
-Set these environment variables in Vercel (**Settings → Environment Variables**), then redeploy:
+Add your GA4 measurement ID in Vercel (**Settings → Environment Variables**):
 
-- `SITE_PASSWORD` — required to enable protection
-- `SITE_USERNAME` — optional, defaults to `playbook`
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` — e.g. `G-XXXXXXXXXX`
 
-Browsers will prompt for username and password. Remove `SITE_PASSWORD` (or leave it unset locally) to disable protection.
-
-For local testing, add the same vars to `.env.local`.
+Redeploy after adding the variable. Analytics stays disabled locally unless you add the same var to `.env.local`.
 
 ## Assets
 

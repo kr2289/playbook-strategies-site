@@ -1,4 +1,5 @@
 import { Archivo, IBM_Plex_Mono } from "next/font/google";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import "./globals.css";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./lib/site";
 
@@ -42,7 +43,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${archivo.className} ${ibmPlexMono.variable}`}>{children}</body>
+      <body className={`${archivo.className} ${ibmPlexMono.variable}`}>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }

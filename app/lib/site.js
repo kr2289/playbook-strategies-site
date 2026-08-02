@@ -5,3 +5,6 @@ export const SITE_NAME = "Playbook Strategies";
 
 export const SITE_DESCRIPTION =
   "Katherine Rowe turns data and insight into decisions that drive growth for sports and entertainment organizations. Ticketing, sponsorship, media, and data strategy.";
+
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-G7FV4CDNFC";
