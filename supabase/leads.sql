@@ -6,6 +6,7 @@ create table if not exists public.playbook_leads (
   name text not null,
   email text not null,
   company text,
+  interest text,
   message text not null,
   source text not null default 'website',
   created_at timestamptz not null default now()

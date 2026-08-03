@@ -2,10 +2,17 @@
 
 import { useState } from "react";
 
+const INTEREST_OPTIONS = [
+  "Assessment",
+  "Project",
+  "Fractional advisory",
+];
+
 const INITIAL_FORM = {
   name: "",
   email: "",
   company: "",
+  interest: "",
   message: "",
   website: "",
 };
@@ -100,7 +107,26 @@ export default function ContactForm({ fallbackEmail }) {
       </label>
 
       <label className="contact-field">
-        <span>What are you looking for?</span>
+        <span>I&apos;m interested in</span>
+        <select
+          name="interest"
+          required
+          value={form.interest}
+          onChange={updateField("interest")}
+        >
+          <option value="" disabled>
+            Select one
+          </option>
+          {INTEREST_OPTIONS.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <label className="contact-field">
+        <span>Tell me more</span>
         <textarea
           name="message"
           rows={5}
