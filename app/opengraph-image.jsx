@@ -18,7 +18,8 @@ export default async function Image() {
 
   const forest = "#182e27";
   const field = "#233931";
-  const sage = "#97b7a5";
+  const sand = "#fbf7f5";
+  const sage = "#5b8d73";
 
   return new ImageResponse(
     (
@@ -27,8 +28,8 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: forest,
-          color: "#ffffff",
+          background: sand,
+          color: forest,
           fontFamily: "system-ui, sans-serif",
         }}
       >
@@ -77,7 +78,7 @@ export default async function Image() {
             Decisions that drive growth for sports & entertainment.
           </div>
 
-          <div style={{ fontSize: 26, color: "#d8e8df", maxWidth: 620 }}>
+          <div style={{ fontSize: 26, color: field, maxWidth: 620 }}>
             Katherine Rowe · Ticketing, sponsorship, media & data strategy
           </div>
         </div>

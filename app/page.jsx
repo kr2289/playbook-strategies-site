@@ -72,11 +72,11 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="wrap hero-grid">
           <div>
-            <span className="eyebrow on-dark">Katherine Rowe · Playbook Strategies</span>
+            <span className="eyebrow">Katherine Rowe · Playbook Strategies</span>
             <h1>I turn data and insight into decisions that drive growth.</h1>
             <p className="hero-lead">{POSITIONING}</p>
             <div className="hero-ctas">
-              <a className="btn light" href="#contact">
+              <a className="btn" href="#contact">
                 Let&apos;s build your playbook
               </a>
             </div>
