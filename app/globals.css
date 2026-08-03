@@ -1,7 +1,7 @@
 :root {
-  --forest: #0f2f26;
-  --field: #174b3a;
-  --evergreen: #2e6b57;
+  --forest: #182e27;
+  --field: #233931;
+  --evergreen: #2e4a40;
   --sage: #5b8d73;
   --ltsage: #97b7a5;
   --muted: #a8c3b5;
@@ -10,8 +10,8 @@
   --gray: #656565;
   --stone: #d8d4cf;
   --blueprint: #98a2a6;
-  --card: #f2f6f3;
-  --paper: #f8f7f3;
+  --card: #f7f3f0;
+  --paper: #fbf7f5;
   --line: #dde4df;
 }
 
@@ -117,24 +117,14 @@ h2 {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
   color: var(--ink);
 }
 
-.brand-name {
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  font-size: 15px;
-  line-height: 1.1;
-}
-
-.brand-sub {
+.brand img {
   display: block;
-  font-weight: 600;
-  letter-spacing: 0.34em;
-  font-size: 8.5px;
-  color: var(--field);
+  width: auto;
+  height: auto;
 }
 
 .nav-links {
@@ -327,8 +317,15 @@ h2 {
   flex-wrap: wrap;
 }
 
-.hero-icon {
+.hero-logo {
   justify-self: center;
+}
+
+.hero-logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(280px, 100%);
 }
 
 /* ---------- value strip ---------- */
@@ -883,7 +880,7 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .hero-icon {
+  .hero-logo {
     display: none;
   }
 

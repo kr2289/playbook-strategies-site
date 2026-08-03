@@ -8,11 +8,16 @@ export const contentType = "image/png";
 
 export default async function Image() {
   const headshotPath = join(process.cwd(), "public/headshot.jpg");
-  const headshot = await readFile(headshotPath);
+  const logoPath = join(process.cwd(), "public/logo.png");
+  const [headshot, logo] = await Promise.all([
+    readFile(headshotPath),
+    readFile(logoPath),
+  ]);
   const headshotSrc = `data:image/jpeg;base64,${headshot.toString("base64")}`;
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
 
-  const forest = "#0f2f26";
-  const field = "#17483a";
+  const forest = "#182e27";
+  const field = "#233931";
   const sage = "#97b7a5";
 
   return new ImageResponse(
@@ -36,40 +41,14 @@ export default async function Image() {
             padding: "64px 72px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 36 }}>
-            <svg width="72" height="72" viewBox="0 0 100 100" fill="none">
-              <rect x="16" y="16" width="68" height="68" stroke="#ffffff" strokeWidth="5" />
-              <line x1="50" y1="5" x2="50" y2="16" stroke="#ffffff" strokeWidth="5" />
-              <line x1="50" y1="84" x2="50" y2="95" stroke="#ffffff" strokeWidth="5" />
-              <line x1="5" y1="50" x2="16" y2="50" stroke="#ffffff" strokeWidth="5" />
-              <line x1="84" y1="50" x2="95" y2="50" stroke="#ffffff" strokeWidth="5" />
-              <line x1="40" y1="60" x2="59" y2="41" stroke="#ffffff" strokeWidth="5" />
-              <path d="M63 37 L55.5 39.5 L60.5 44.5 Z" fill="#ffffff" />
-              <circle cx="36" cy="64" r="7" stroke="#ffffff" strokeWidth="5" />
-              <circle cx="66" cy="34" r="7" stroke="#ffffff" strokeWidth="5" />
-            </svg>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <span
-                style={{
-                  fontSize: 34,
-                  fontWeight: 800,
-                  letterSpacing: "0.14em",
-                  lineHeight: 1.1,
-                }}
-              >
-                PLAYBOOK
-              </span>
-              <span
-                style={{
-                  fontSize: 16,
-                  fontWeight: 600,
-                  letterSpacing: "0.34em",
-                  color: sage,
-                }}
-              >
-                STRATEGIES
-              </span>
-            </div>
+          <div style={{ display: "flex", alignItems: "center", marginBottom: 36 }}>
+            <img
+              src={logoSrc}
+              alt=""
+              width="120"
+              height="120"
+              style={{ objectFit: "contain" }}
+            />
           </div>
 
           <div

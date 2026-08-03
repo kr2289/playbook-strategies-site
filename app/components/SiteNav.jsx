@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import PlayIcon from "./PlayIcon";
+import Logo from "./Logo";
 
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
@@ -35,11 +35,7 @@ export default function SiteNav() {
     <header className="nav">
       <div className="wrap nav-inner">
         <a className="brand" href="#top" onClick={closeMenu}>
-          <PlayIcon size={34} color="#17483a" weight={5} />
-          <span className="brand-name">
-            PLAYBOOK
-            <span className="brand-sub">STRATEGIES</span>
-          </span>
+          <Logo size={44} priority />
         </a>
 
         <nav className="nav-links nav-desktop" aria-label="Primary">

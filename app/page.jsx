@@ -1,5 +1,5 @@
 import ContactForm from "./components/ContactForm";
-import PlayIcon from "./components/PlayIcon";
+import Logo from "./components/Logo";
 import SiteNav from "./components/SiteNav";
 import { BOOKING_URL } from "./lib/site";
 
@@ -81,8 +81,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hero-icon">
-            <PlayIcon size={260} />
+          <div className="hero-logo">
+            <Logo size={280} priority />
           </div>
         </div>
       </section>
