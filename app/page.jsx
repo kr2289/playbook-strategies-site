@@ -36,14 +36,14 @@ const caseGroups = [
     label: "Partnerships & Media",
     cases: [
       ["< 6 weeks", "Broadcast Integration Strategy & Deliveries", "Branded integrations from concept to on-air across NBC Sports, Paramount ANZ, and a global Formula 1 partnership."],
-      ["162M+", "Data Storytelling Strategy", "Impressions driven by a cross-functional data storytelling team across Team USA, Team GB, and Team Germany."],
+      ["162M+", "Data Storytelling Strategy", "Impressions driven by a cross-functional data storytelling team."],
     ],
   },
   {
     label: "Data & Activation",
     cases: [
       ["4 weeks", "Enterprise Data Transformation", "Fragmented data sources unified into one governed Databricks pipeline powering an expanded client portal."],
-      ["4k+ scans", "Athlete Data & AI Activation", "An interactive athlete-data experience with Ashton Eaton, in the top 10% of all Dreamforce activations."],
+      ["4k+ scans", "Athlete Data & AI Activation", "An interactive athlete-data experience, in the top 10% of all Dreamforce activations."],
     ],
   },
 ];
