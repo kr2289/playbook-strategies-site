@@ -1,6 +1,7 @@
 import ContactForm from "./components/ContactForm";
 import PlayIcon from "./components/PlayIcon";
 import SiteNav from "./components/SiteNav";
+import { BOOKING_URL } from "./lib/site";
 
 const EMAIL = "katherine@katherinerowe.com";
 
@@ -12,7 +13,7 @@ const areas = [
   ["02", "Partnership & Sponsorship Strategy", "Valuation, benchmarking, asset audits, and ROI models for deals that pay off."],
   ["03", "Ticketing, Pricing & Event Value", "Pricing resets, packaging, premium inventory, and monetization that lift yield."],
   ["04", "Broadcast & Media Integration", "Branded integrations and global feed strategy, from concept to delivery."],
-  ["05", "Data Storytelling & Activation", "Campaigns, BI dashboards & reporting, athlete & AI activations, and data-brand positioning."],
+  ["05", "Data Storytelling & Activation", "Campaigns, dashboards, athlete & AI activations, and data-brand positioning."],
   ["06", "Tech Stack & Data Foundations", "Unified fan data models, automated pipelines, predictive analytics, and CRM & marketing automation."],
 ];
 
@@ -77,9 +78,6 @@ export default function Home() {
             <div className="hero-ctas">
               <a className="btn light" href="#contact">
                 Let&apos;s build your playbook
-              </a>
-              <a className="btn ghost" href="/playbook-strategies-one-pager.pdf" download>
-                Download the one-pager
               </a>
             </div>
           </div>
@@ -268,6 +266,17 @@ export default function Home() {
               If your organization is sitting on data it isn&apos;t using,
               let&apos;s talk.
             </p>
+            <div className="contact-booking">
+              <a
+                className="btn light"
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a meeting
+              </a>
+              <span className="contact-booking-or">or send a message</span>
+            </div>
             <ContactForm fallbackEmail={EMAIL} />
             <p className="contact-email-fallback">
               Prefer email?{" "}
@@ -275,6 +284,16 @@ export default function Home() {
             </p>
           </div>
           <div className="contact-links">
+            <span>
+              <span className="label">Meeting</span>
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book time on my calendar
+              </a>
+            </span>
             <span>
               <span className="label">LinkedIn</span>
               <a
@@ -286,29 +305,13 @@ export default function Home() {
               </a>
             </span>
             <span>
-              <span className="label">Blog</span>
+              <span className="label">Newsletter</span>
               <a
                 href="https://katherinerowe.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 katherinerowe.substack.com
-              </a>
-            </span>
-            <span>
-              <span className="label">Website</span>
-              <a
-                href="https://katherinerowe.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                katherinerowe.com
-              </a>
-            </span>
-            <span>
-              <span className="label">One-pager</span>
-              <a href="/playbook-strategies-one-pager.pdf" download>
-                Download the PDF
               </a>
             </span>
           </div>

@@ -661,7 +661,20 @@ h2 {
   color: var(--muted);
   font-size: 17px;
   max-width: 520px;
+  margin-bottom: 22px;
+}
+
+.contact-booking {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
   margin-bottom: 28px;
+}
+
+.contact-booking-or {
+  color: var(--muted);
+  font-size: 15px;
 }
 
 .contact-form {

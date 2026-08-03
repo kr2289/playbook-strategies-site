@@ -8,3 +8,6 @@ export const SITE_DESCRIPTION =
 
 export const GA_MEASUREMENT_ID =
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-G7FV4CDNFC";
+
+export const BOOKING_URL =
+  "https://calendar.notion.so/meet/katherinea/5cux4w1o";
