@@ -60,7 +60,7 @@ const who = [
 const experience = [
   ["2024–2026", "CrowdIQ", "Led client strategy & insights for global sports organizations, turning crowd data into ticketing, game-day, and sponsorship gains."],
   ["2021–2024", "Salesforce", "Drove data storytelling & partnership ROI across the F1 and Olympic ecosystems; led Tableau marketing strategic planning & budget."],
-  ["2020–2021", "Kraft Analytics Group", "Led ticketing analytics for the NFL and its 30 clubs; built fan acquisition and international expansion strategies."],
+  ["2020–2021", "Kraft Analytics Group", "Led ticketing analytics for US major leagues and clubs; built fan acquisition and international expansion strategies."],
   ["2012–2018", "U.S. Army", "Signal officer leading teams that delivered satellite, radio, and network communications."],
 ];
 
