@@ -14,7 +14,7 @@ const areas = [
   ["03", "Ticketing, Pricing & Event Value", "Pricing resets, packaging, premium inventory, and monetization that lift yield."],
   ["04", "Broadcast & Media Integration", "Branded integrations and global feed strategy, from concept to delivery."],
   ["05", "Data Storytelling & Activation", "Campaigns, dashboards, athlete & AI activations, and data-brand positioning."],
-  ["06", "Tech Stack & Data Foundations", "Unified fan data models, automated pipelines, predictive analytics, and CRM & marketing automation."],
+  ["06", "Tech Stack & Data Foundations", "Vendor selection, unified fan data models, automated pipelines, predictive analytics, and CRM & marketing automation."],
 ];
 
 const steps = [
