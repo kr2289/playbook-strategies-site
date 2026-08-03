@@ -1,3 +1,4 @@
+import ContactForm from "./components/ContactForm";
 import PlayIcon from "./components/PlayIcon";
 import SiteNav from "./components/SiteNav";
 
@@ -65,7 +66,7 @@ const experience = [
 export default function Home() {
   return (
     <main>
-      <SiteNav email={EMAIL} />
+      <SiteNav />
 
       <section className="hero" id="top">
         <div className="wrap hero-grid">
@@ -74,7 +75,7 @@ export default function Home() {
             <h1>I turn data and insight into decisions that drive growth.</h1>
             <p className="hero-lead">{POSITIONING}</p>
             <div className="hero-ctas">
-              <a className="btn light" href={`mailto:${EMAIL}`}>
+              <a className="btn light" href="#contact">
                 Let&apos;s build your playbook
               </a>
               <a className="btn ghost" href="/playbook-strategies-one-pager.pdf" download>
@@ -267,9 +268,11 @@ export default function Home() {
               If your organization is sitting on data it isn&apos;t using,
               let&apos;s talk.
             </p>
-            <a className="btn light" href={`mailto:${EMAIL}`}>
-              {EMAIL}
-            </a>
+            <ContactForm fallbackEmail={EMAIL} />
+            <p className="contact-email-fallback">
+              Prefer email?{" "}
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            </p>
           </div>
           <div className="contact-links">
             <span>

@@ -661,7 +661,125 @@ h2 {
   color: var(--muted);
   font-size: 17px;
   max-width: 520px;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field span {
+  color: var(--ltsage);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  border: 1px solid rgba(151, 183, 165, 0.45);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 16px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: rgba(168, 195, 181, 0.75);
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--ltsage);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 132px;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form-submit {
+  justify-self: start;
+  margin-top: 4px;
+}
+
+.contact-form-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.contact-form-error {
+  color: #ffd5d5;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.contact-form-error a {
+  color: #fff;
+}
+
+.contact-form-success {
+  max-width: 560px;
+  padding: 22px 24px;
+  border: 1px solid rgba(151, 183, 165, 0.45);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-form-success-title {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contact-form-success p:last-child {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.contact-email-fallback {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.contact-email-fallback a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email-fallback a:hover {
+  color: var(--ltsage);
 }
 
 .contact-links {
@@ -740,6 +858,9 @@ h2 {
     max-width: 280px;
   }
   .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-row {
     grid-template-columns: 1fr;
   }
   .nav-desktop {

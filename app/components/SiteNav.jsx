@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "#about", label: "About" },
 ];
 
-export default function SiteNav({ email }) {
+export default function SiteNav() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function SiteNav({ email }) {
               {label}
             </a>
           ))}
-          <a className="btn" href={`mailto:${email}`}>
+          <a className="btn" href="#contact">
             Let&apos;s Talk
           </a>
         </nav>
@@ -78,7 +78,7 @@ export default function SiteNav({ email }) {
               {label}
             </a>
           ))}
-          <a className="btn" href={`mailto:${email}`} onClick={closeMenu}>
+          <a className="btn" href="#contact" onClick={closeMenu}>
             Let&apos;s Talk
           </a>
         </nav>

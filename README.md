@@ -25,6 +25,25 @@ Add your GA4 measurement ID in Vercel (**Settings → Environment Variables**):
 
 Redeploy after adding the variable. Analytics stays disabled locally unless you add the same var to `.env.local`.
 
+## Contact form (Supabase)
+
+Leads are stored in the **Sports Biz IQ** Supabase project (`playbook_leads` table).
+
+1. Apply the migration in `sports-biz-iq/supabase/migrations/20260802200000_playbook_leads.sql` (or run `supabase/leads.sql` in the SQL editor).
+2. Add the same Supabase env vars used by Sports Biz IQ to Vercel:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
+
+View leads in Supabase → **Table Editor** → `playbook_leads`.
+
+**Resend (email notifications)**
+- `RESEND_API_KEY`
+- `RESEND_FROM_EMAIL` — verified sender in Resend, e.g. `Playbook Strategies <hello@yourdomain.com>`
+- `CONTACT_TO_EMAIL` — optional, defaults to `katherine@katherinerowe.com`
+
+Leads are always saved to Supabase. Resend sends you an email alert when configured.
+
 ## Assets
 
 - `public/headshot.jpg` — About section photo (swap anytime)
