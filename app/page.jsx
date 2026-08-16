@@ -2,6 +2,7 @@ import ContactForm from "./components/ContactForm";
 import Logo from "./components/Logo";
 import SiteNav from "./components/SiteNav";
 import { BOOKING_URL } from "./lib/site";
+import Image from "next/image";
 
 const EMAIL = "katherine@katherinerowe.com";
 
@@ -55,6 +56,16 @@ const who = [
   ["Tech Providers", "SaaS, data, and analytics platforms selling into sports & entertainment — positioning, use cases, and the story that wins enterprise deals."],
   ["Investment & Real Estate", "Investors, developers, and ownership groups evaluating sports & entertainment assets, venue economics, and the revenue story behind the deal."],
   ["Athletes & Individuals", "Athletes and personalities turning performance data into brand storytelling and activations."],
+];
+
+const clients = [
+  { name: "ATX Open", logo: "/clients/atx-open.png", width: 180, height: 120 },
+  {
+    name: "Dropshot Series",
+    logo: "/clients/dropshot-series.png",
+    width: 220,
+    height: 72,
+  },
 ];
 
 const experience = [
@@ -176,6 +187,27 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="clients" id="clients">
+        <div className="wrap">
+          <span className="eyebrow">Clients</span>
+          <div className="bar" />
+          <h2>Trusted across sports &amp; entertainment.</h2>
+          <div className="client-logos">
+            {clients.map(({ name, logo, width, height }) => (
+              <div className="client-logo" key={name}>
+                <Image
+                  src={logo}
+                  alt={name}
+                  width={width}
+                  height={height}
+                  style={{ width: "auto", height: "auto", maxWidth: "100%" }}
+                />
               </div>
             ))}
           </div>
