@@ -210,7 +210,7 @@ export default function Home() {
           <span className="eyebrow">Clients</span>
           <div className="bar" />
           <h2>Trusted across sports &amp; entertainment.</h2>
-          <div className="client-logos">
+          <div className="client-roster">
             {clients.map(({ name, logo, width, height }) => (
               <div className="client-logo" key={name}>
                 <Image
@@ -222,10 +222,10 @@ export default function Home() {
                 />
               </div>
             ))}
-            <div className="client-logo client-logo-others">
-              <span>and others</span>
-            </div>
           </div>
+          <p className="client-more">
+            <span aria-hidden="true">+</span> and others
+          </p>
         </div>
       </section>
 
