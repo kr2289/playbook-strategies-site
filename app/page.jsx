@@ -66,6 +66,18 @@ const clients = [
     width: 220,
     height: 72,
   },
+  {
+    name: "Badge of Honour",
+    logo: "/clients/badge-of-honour.png",
+    width: 120,
+    height: 120,
+  },
+  {
+    name: "Texas McCombs Business of Sports Institute",
+    logo: "/clients/texas-mccombs-bosi.png",
+    width: 240,
+    height: 94,
+  },
 ];
 
 const experience = [
@@ -210,6 +222,9 @@ export default function Home() {
                 />
               </div>
             ))}
+            <div className="client-logo client-logo-others">
+              <span>and others</span>
+            </div>
           </div>
         </div>
       </section>

@@ -588,6 +588,13 @@ h2 {
   object-fit: contain;
 }
 
+.client-logo-others span {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--field);
+  letter-spacing: 0.01em;
+}
+
 /* ---------- about ---------- */
 .about-grid {
   display: grid;
