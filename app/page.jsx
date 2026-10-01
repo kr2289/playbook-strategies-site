@@ -1,7 +1,12 @@
 import ContactForm from "./components/ContactForm";
 import Logo from "./components/Logo";
+import PlaybookList from "./components/PlaybookList";
+import ReportsList from "./components/ReportsList";
+import SiteFooter from "./components/SiteFooter";
 import SiteNav from "./components/SiteNav";
-import { BOOKING_URL } from "./lib/site";
+import { PLAYBOOK_PIECES } from "./lib/playbook";
+import { REPORTS } from "./lib/reports";
+import { BOOKING_URL, SUBSTACK_URL } from "./lib/site";
 import Image from "next/image";
 
 const EMAIL = "katherine@katherinerowe.com";
@@ -205,6 +210,34 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="playbook-home" id="playbook">
+        <div className="wrap">
+          <span className="eyebrow">The Playbook</span>
+          <div className="bar" />
+          <h2>How the work thinks on the page.</h2>
+          <p className="work-lead">
+            Visual essays on venues, ticketing, market entry, and athlete
+            sponsorship. Email unlocks the library, and you can opt in to the
+            weekly newsletter at the same time.
+          </p>
+          <PlaybookList pieces={PLAYBOOK_PIECES} />
+        </div>
+      </section>
+
+      <section className="reports-home" id="reports">
+        <div className="wrap">
+          <span className="eyebrow">Reports</span>
+          <div className="bar" />
+          <h2>Research you can take into the room.</h2>
+          <p className="work-lead">
+            Original analysis on how sports properties price the fan
+            experience. Name and email unlock the PDF; the newsletter is
+            optional.
+          </p>
+          <ReportsList reports={REPORTS} />
+        </div>
+      </section>
+
       <section className="clients" id="clients">
         <div className="wrap">
           <span className="eyebrow">Clients</span>
@@ -294,7 +327,7 @@ export default function Home() {
           </p>
           <a
             className="btn"
-            href="https://katherinerowe.substack.com"
+            href={SUBSTACK_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -354,7 +387,7 @@ export default function Home() {
             <span>
               <span className="label">Newsletter</span>
               <a
-                href="https://katherinerowe.substack.com"
+                href={SUBSTACK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -365,15 +398,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="wrap footer-inner">
-          <span>
-            &copy; {new Date().getFullYear()} Playbook Strategies &middot;
-            Katherine Rowe
-          </span>
-          <span>Based in Austin, TX. Working globally.</span>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

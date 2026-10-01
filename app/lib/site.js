@@ -11,3 +11,5 @@ export const GA_MEASUREMENT_ID =
 
 export const BOOKING_URL =
   "https://calendar.notion.so/meet/katherinea/5cux4w1o";
+
+export const SUBSTACK_URL = "https://katherinerowe.substack.com";

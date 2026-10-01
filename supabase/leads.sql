@@ -9,8 +9,12 @@ create table if not exists public.playbook_leads (
   interest text,
   message text not null,
   source text not null default 'website',
+  newsletter_opt_in boolean not null default false,
   created_at timestamptz not null default now()
 );
+
+alter table public.playbook_leads
+  add column if not exists newsletter_opt_in boolean not null default false;
 
 create index if not exists playbook_leads_created_at_idx
   on public.playbook_leads (created_at desc);

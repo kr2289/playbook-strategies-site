@@ -1,17 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { href: "#services", label: "Services" },
-  { href: "#approach", label: "Approach" },
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#approach", label: "Approach" },
+  { href: "/#work", label: "Work" },
+  { href: "/playbook", label: "Playbook" },
+  { href: "/reports", label: "Reports" },
+  { href: "/#about", label: "About" },
 ];
+
+function linkIsActive(href, pathname) {
+  if (!href.startsWith("/") || href.includes("#")) return false;
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export default function SiteNav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -30,21 +39,26 @@ export default function SiteNav() {
   }, []);
 
   const closeMenu = () => setOpen(false);
+  const contactHref = pathname === "/" ? "#contact" : "/#contact";
 
   return (
     <header className="nav">
       <div className="wrap nav-inner">
-        <a className="brand" href="#top" onClick={closeMenu}>
+        <a className="brand" href="/" onClick={closeMenu}>
           <Logo size={44} priority />
         </a>
 
         <nav className="nav-links nav-desktop" aria-label="Primary">
           {NAV_LINKS.map(({ href, label }) => (
-            <a key={href} href={href}>
+            <a
+              key={href}
+              href={href}
+              className={linkIsActive(href, pathname) ? "is-active" : undefined}
+            >
               {label}
             </a>
           ))}
-          <a className="btn" href="#contact">
+          <a className="btn" href={contactHref}>
             Let&apos;s Talk
           </a>
         </nav>
@@ -74,7 +88,7 @@ export default function SiteNav() {
               {label}
             </a>
           ))}
-          <a className="btn" href="#contact" onClick={closeMenu}>
+          <a className="btn" href={contactHref} onClick={closeMenu}>
             Let&apos;s Talk
           </a>
         </nav>
