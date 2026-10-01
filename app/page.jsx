@@ -1,10 +1,8 @@
 import ContactForm from "./components/ContactForm";
 import Logo from "./components/Logo";
-import PlaybookList from "./components/PlaybookList";
 import ReportsList from "./components/ReportsList";
 import SiteFooter from "./components/SiteFooter";
 import SiteNav from "./components/SiteNav";
-import { PLAYBOOK_PIECES } from "./lib/playbook";
 import { REPORTS } from "./lib/reports";
 import { BOOKING_URL, SUBSTACK_URL } from "./lib/site";
 import Image from "next/image";
@@ -207,20 +205,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="playbook-home" id="playbook">
-        <div className="wrap">
-          <span className="eyebrow">The Playbook</span>
-          <div className="bar" />
-          <h2>How the work thinks on the page.</h2>
-          <p className="work-lead">
-            Visual essays on venues, ticketing, market entry, and athlete
-            sponsorship. Email unlocks the library, and you can opt in to the
-            weekly newsletter at the same time.
-          </p>
-          <PlaybookList pieces={PLAYBOOK_PIECES} />
         </div>
       </section>
 
