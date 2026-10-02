@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: `Reports | ${SITE_NAME}`,
   description:
-    "Downloadable research from Playbook Strategies. Leave your email to get the PDF, and opt in to the weekly newsletter if you want it.",
+    "Tennessee made the first hour of concessions half-off after the Texas game. 19 pages on how other schools already price food and beer.",
   alternates: {
     canonical: "/reports",
   },
@@ -27,16 +27,15 @@ export default function ReportsIndexPage() {
         <div className="wrap">
           <span className="eyebrow">Reports</span>
           <div className="bar" />
-          <h1>Research you can take into the room.</h1>
+          <h1>Half-price concessions.</h1>
           <p className="playbook-index-lead">
-            Original analysis on how sports properties price the fan
-            experience — starting with college football concessions. Leave
-            your name and email to download a PDF. Check the box if you also
-            want the weekly newsletter.
+            After the Texas game, Tennessee made the first hour half-off for
+            the rest of the season. I compared how other schools already
+            price food and beer, and what that does to the margin.
           </p>
           {unlocked && (
             <p className="playbook-unlocked-note">
-              Reports are unlocked on this browser.
+              You already unlocked the PDF on this computer.
             </p>
           )}
           <ReportsList reports={REPORTS} />

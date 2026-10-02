@@ -62,10 +62,7 @@ export default function ReportPage({ params }) {
         {unlocked ? (
           <div className="wrap reports-download">
             <div className="reports-download-panel">
-              <p>
-                This report is unlocked on this browser. Download the PDF, or
-                read it below.
-              </p>
+              <p>Download the PDF, or read it here.</p>
               <a
                 className="btn"
                 href={`/api/reports/file/${report.slug}?download=1`}

@@ -15,7 +15,7 @@ export default function ReportsList({ reports }) {
           <span className="reports-meta">
             PDF · {report.pages} pages · {report.published}
           </span>
-          <span className="playbook-card-cta">Get the report</span>
+          <span className="playbook-card-cta">Open</span>
         </Link>
       ))}
     </div>

@@ -5,7 +5,7 @@ export const REPORTS = [
     slug: "fan-first-happy-hour",
     title: "Happy Hour and Fan First Pricing in College Football",
     kicker: "College Football Concessions",
-    dek: "Tennessee's first hour at half price sparked a look at how schools price concessions — nine programs, seven schools, and which approaches might work best.",
+    dek: "Tennessee went half-off for the first hour after gates. Nine programs, seven schools, four ways of pricing the same inventory.",
     file: "fan-first-happy-hour.pdf",
     pages: 19,
     published: "October 1, 2026",

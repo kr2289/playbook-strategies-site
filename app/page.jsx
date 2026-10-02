@@ -212,11 +212,10 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">Reports</span>
           <div className="bar" />
-          <h2>Research you can take into the room.</h2>
+          <h2>Half-price concessions.</h2>
           <p className="work-lead">
-            Original analysis on how sports properties price the fan
-            experience. Name and email unlock the PDF; the newsletter is
-            optional.
+            Tennessee made the first hour half-off after the Texas game. I
+            compared the other schools already running a version of this.
           </p>
           <ReportsList reports={REPORTS} />
         </div>

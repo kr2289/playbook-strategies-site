@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { SUBSTACK_URL } from "../lib/site";
 
 const INITIAL_FORM = {
   name: "",
@@ -76,8 +75,7 @@ export default function ReportsGate({ slug }) {
   return (
     <div className="playbook-gate">
       <p className="playbook-gate-lead">
-        Leave your name and email to download this report. Check the box if you
-        also want the weekly newsletter.
+        Name and email for the PDF.
       </p>
       <form className="playbook-gate-form" onSubmit={handleSubmit} noValidate>
         <div className="playbook-gate-row">
@@ -117,10 +115,7 @@ export default function ReportsGate({ slug }) {
             }
           />
           <span>
-            Subscribe me to the weekly newsletter on{" "}
-            <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer">
-              Substack
-            </a>
+            Also send the weekly newsletter
           </span>
         </label>
         <label className="contact-honeypot" aria-hidden="true">
@@ -144,7 +139,7 @@ export default function ReportsGate({ slug }) {
           type="submit"
           disabled={status === "submitting"}
         >
-          {status === "submitting" ? "Unlocking..." : "Download the PDF"}
+          {status === "submitting" ? "Downloading…" : "Download PDF"}
         </button>
       </form>
     </div>
