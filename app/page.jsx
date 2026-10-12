@@ -212,9 +212,14 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">Reports</span>
           <div className="bar" />
-          <h2>Market intelligence.</h2>
+          <h2>A closer look at the business of sports.</h2>
           <p className="work-lead">
-            I write these on a market, not a client.
+            Playbook Strategies reports bring together data, research and
+            commercial analysis to help teams, brands and investors
+            understand a market, evaluate opportunities and make more
+            informed decisions. Each report examines how revenue is
+            generated, where growth is coming from and what it means for
+            your business.
           </p>
           <ReportsList reports={REPORTS} />
         </div>

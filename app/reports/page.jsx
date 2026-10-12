@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: `Reports | ${SITE_NAME}`,
   description:
-    "Market intelligence from Playbook Strategies. Written on a market, not a client.",
+    "Playbook Strategies reports bring together data, research and commercial analysis to help teams, brands and investors understand a market, evaluate opportunities and make more informed decisions.",
   alternates: {
     canonical: "/reports",
   },
@@ -27,9 +27,14 @@ export default function ReportsIndexPage() {
         <div className="wrap">
           <span className="eyebrow">Reports</span>
           <div className="bar" />
-          <h1>Market intelligence.</h1>
+          <h1>A closer look at the business of sports.</h1>
           <p className="playbook-index-lead">
-            I write these on a market, not a client.
+            Playbook Strategies reports bring together data, research and
+            commercial analysis to help teams, brands and investors
+            understand a market, evaluate opportunities and make more
+            informed decisions. Each report examines how revenue is
+            generated, where growth is coming from and what it means for
+            your business.
           </p>
           {unlocked && (
             <p className="playbook-unlocked-note">
