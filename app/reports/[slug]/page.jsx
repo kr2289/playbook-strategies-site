@@ -62,7 +62,7 @@ export default function ReportPage({ params }) {
         {unlocked ? (
           <div className="wrap reports-download">
             <div className="reports-download-panel">
-              <p>Download the PDF, or read it here.</p>
+              <p>Download, or read it here.</p>
               <a
                 className="btn"
                 href={`/api/reports/file/${report.slug}?download=1`}
@@ -86,7 +86,7 @@ export default function ReportPage({ params }) {
       {others.length > 0 && (
         <section className="playbook-more">
           <div className="wrap">
-            <span className="eyebrow">More reports</span>
+            <span className="eyebrow">Other reports</span>
             <div className="bar" />
             <ReportsList reports={others} />
           </div>

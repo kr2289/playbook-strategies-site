@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: `Reports | ${SITE_NAME}`,
   description:
-    "Tennessee made the first hour of concessions half-off after the Texas game. 19 pages on how other schools already price food and beer.",
+    "Market intelligence from Playbook Strategies. Written on a market, not a client.",
   alternates: {
     canonical: "/reports",
   },
@@ -27,15 +27,13 @@ export default function ReportsIndexPage() {
         <div className="wrap">
           <span className="eyebrow">Reports</span>
           <div className="bar" />
-          <h1>Half-price concessions.</h1>
+          <h1>Market intelligence.</h1>
           <p className="playbook-index-lead">
-            After the Texas game, Tennessee made the first hour half-off for
-            the rest of the season. I compared how other schools already
-            price food and beer, and what that does to the margin.
+            I write these on a market, not a client.
           </p>
           {unlocked && (
             <p className="playbook-unlocked-note">
-              You already unlocked the PDF on this computer.
+              Unlocked on this computer.
             </p>
           )}
           <ReportsList reports={REPORTS} />
