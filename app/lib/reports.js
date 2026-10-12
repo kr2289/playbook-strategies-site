@@ -8,7 +8,7 @@ export const REPORTS = [
     dek: "Crowds, money, and rights in Australia's most attended league.",
     file: "afl-market-intelligence-2026.pdf",
     pages: 27,
-    published: "October 11, 2026",
+    published: "October 12, 2026",
   },
   {
     slug: "fan-first-happy-hour",
