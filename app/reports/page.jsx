@@ -1,8 +1,6 @@
-import { cookies } from "next/headers";
 import ReportsList from "../components/ReportsList";
 import SiteFooter from "../components/SiteFooter";
 import SiteNav from "../components/SiteNav";
-import { hasReportsAccess } from "../lib/reports-access";
 import { REPORTS } from "../lib/reports";
 import { SITE_NAME } from "../lib/site";
 
@@ -18,8 +16,6 @@ export const metadata = {
 };
 
 export default function ReportsIndexPage() {
-  const unlocked = hasReportsAccess(cookies());
-
   return (
     <main>
       <SiteNav />
@@ -36,11 +32,6 @@ export default function ReportsIndexPage() {
             generated, where growth is coming from and what it means for
             your business.
           </p>
-          {unlocked && (
-            <p className="playbook-unlocked-note">
-              Unlocked on this computer.
-            </p>
-          )}
           <ReportsList reports={REPORTS} />
         </div>
       </section>

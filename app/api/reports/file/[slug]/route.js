@@ -8,13 +8,13 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET(request, { params }) {
-  if (!hasReportsAccess(cookies())) {
-    return new Response("Unlock this report to download it.", { status: 401 });
-  }
-
   const report = getReport(params.slug);
   if (!report) {
     return new Response("Not found.", { status: 404 });
+  }
+
+  if (!hasReportsAccess(cookies(), report.slug)) {
+    return new Response("Unlock this report to download it.", { status: 401 });
   }
 
   const reportsDir = path.resolve(process.cwd(), "content", "reports");

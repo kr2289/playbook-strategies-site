@@ -75,7 +75,7 @@ export default function ReportsGate({ slug }) {
   return (
     <div className="playbook-gate">
       <p className="playbook-gate-lead">
-        Name and email for the PDF.
+        Name and email for this PDF.
       </p>
       <form className="playbook-gate-form" onSubmit={handleSubmit} noValidate>
         <div className="playbook-gate-row">

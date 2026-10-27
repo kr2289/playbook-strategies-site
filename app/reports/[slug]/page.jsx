@@ -40,7 +40,7 @@ export default function ReportPage({ params }) {
   const report = getReport(params.slug);
   if (!report) notFound();
 
-  const unlocked = hasReportsAccess(cookies());
+  const unlocked = hasReportsAccess(cookies(), report.slug);
   const others = REPORTS.filter((item) => item.slug !== report.slug);
 
   return (

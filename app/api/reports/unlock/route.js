@@ -4,6 +4,7 @@ import { Resend } from "resend";
 import {
   createReportsToken,
   reportsCookieOptions,
+  unlockedReportSlugs,
 } from "../../../lib/reports-access";
 import { getReport } from "../../../lib/reports";
 import { subscribeToSubstack } from "../../../lib/substack";
@@ -169,9 +170,12 @@ export async function POST(request) {
     }
   }
 
+  const slugs = unlockedReportSlugs(cookies());
+  if (!slugs.includes(report.slug)) slugs.push(report.slug);
+
   cookies().set({
     ...reportsCookieOptions(),
-    value: createReportsToken(),
+    value: createReportsToken(slugs),
   });
 
   return Response.json({ ok: true, download: `/api/reports/file/${report.slug}` });
