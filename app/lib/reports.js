@@ -2,6 +2,15 @@ export const REPORTS_COOKIE = "reports_access";
 
 export const REPORTS = [
   {
+    slug: "wnba-market-intelligence-2026",
+    title: "The WNBA in 2026: Crowds, Team Finances, and Expansion",
+    kicker: "WNBA · 2026",
+    dek: "Crowds, money, and rights in the Women's National Basketball Association.",
+    file: "wnba-market-intelligence-2026.pdf",
+    pages: 42,
+    published: "October 27, 2026",
+  },
+  {
     slug: "afl-market-intelligence-2026",
     title: "The AFL in 2026: Crowds, Club Finances, and Partner Deals",
     kicker: "AFL · 2026",
