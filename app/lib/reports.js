@@ -2,6 +2,15 @@ export const REPORTS_COOKIE = "reports_access";
 
 export const REPORTS = [
   {
+    slug: "college-jersey-patches-2026",
+    title: "College Jersey Patches in 2026: Deals, Buyers, and the New Commercial Market",
+    kicker: "College · 2026",
+    dek: "The first three months of college jersey patches: who bought, what they paid, and what is still for sale.",
+    file: "college-jersey-patches-2026.pdf",
+    pages: 27,
+    published: "October 30, 2026",
+  },
+  {
     slug: "wnba-market-intelligence-2026",
     title: "The WNBA in 2026: Crowds, Team Finances, and Expansion",
     kicker: "WNBA · 2026",
