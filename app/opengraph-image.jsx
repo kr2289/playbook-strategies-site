@@ -16,10 +16,11 @@ export default async function Image() {
   const headshotSrc = `data:image/jpeg;base64,${headshot.toString("base64")}`;
   const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
 
-  const forest = "#182e27";
-  const field = "#233931";
-  const sand = "#fbf7f5";
-  const sage = "#5b8d73";
+  const paper = "#FDFCFA";
+  const forest = "#0F2F26";
+  const field = "#17483A";
+  const text2 = "#333333";
+  const stone = "#D5D4CF";
 
   return new ImageResponse(
     (
@@ -28,7 +29,7 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: sand,
+          background: paper,
           color: forest,
           fontFamily: "system-ui, sans-serif",
         }}
@@ -42,23 +43,21 @@ export default async function Image() {
             padding: "64px 72px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", marginBottom: 36 }}>
-            <img
-              src={logoSrc}
-              alt=""
-              width="120"
-              height="120"
-              style={{ objectFit: "contain" }}
-            />
-          </div>
+          <img
+            src={logoSrc}
+            alt=""
+            width="72"
+            height="72"
+            style={{ objectFit: "contain", marginBottom: 28 }}
+          />
 
           <div
             style={{
-              fontSize: 22,
-              fontWeight: 700,
-              letterSpacing: "0.24em",
+              fontSize: 18,
+              fontWeight: 600,
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
-              color: sage,
+              color: field,
               marginBottom: 18,
             }}
           >
@@ -70,15 +69,15 @@ export default async function Image() {
               fontSize: 52,
               fontWeight: 800,
               lineHeight: 1.08,
-              letterSpacing: "-0.02em",
-              maxWidth: 640,
+              letterSpacing: "-0.015em",
+              maxWidth: 680,
               marginBottom: 24,
             }}
           >
             Decisions that drive growth for sports & entertainment.
           </div>
 
-          <div style={{ fontSize: 26, color: field, maxWidth: 620 }}>
+          <div style={{ fontSize: 26, color: text2, maxWidth: 640 }}>
             Katherine Rowe · Ticketing, sponsorship, media & data strategy
           </div>
         </div>
@@ -89,8 +88,8 @@ export default async function Image() {
             alignItems: "center",
             justifyContent: "center",
             width: 420,
-            background: field,
-            borderLeft: "1px solid rgba(255,255,255,0.12)",
+            background: paper,
+            borderLeft: `1px solid ${stone}`,
           }}
         >
           <img
@@ -99,8 +98,8 @@ export default async function Image() {
             width="300"
             height="300"
             style={{
-              borderRadius: 999,
-              border: "6px solid rgba(255,255,255,0.18)",
+              borderRadius: 4,
+              border: `1px solid ${stone}`,
               objectFit: "cover",
             }}
           />

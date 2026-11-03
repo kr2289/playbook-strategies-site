@@ -1,20 +1,20 @@
-import { Archivo, IBM_Plex_Mono } from "next/font/google";
+import { Archivo, Inter } from "next/font/google";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import "./globals.css";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./lib/site";
 
 const archivo = Archivo({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  weight: ["700", "800"],
   display: "swap",
+  variable: "--font-archivo",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600"],
   display: "swap",
-  variable: "--font-mono",
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -42,8 +42,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${archivo.className} ${ibmPlexMono.variable}`}>
+    <html lang="en" className={`${archivo.variable} ${inter.variable}`}>
+      <body>
         <GoogleAnalytics />
         {children}
       </body>

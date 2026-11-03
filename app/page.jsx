@@ -225,6 +225,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="stech-home" id="sports-tech">
+        <div className="wrap">
+          <span className="eyebrow">Sports Tech</span>
+          <div className="bar" />
+          <h2>A buyer&apos;s map of the commercial stack.</h2>
+          <p className="work-lead">
+            Explore vendors, compare capabilities, and see who’s using them.
+            Profiles are published after review.
+          </p>
+          <a className="btn" href="/sports-tech">
+            Open the directory
+          </a>
+        </div>
+      </section>
+
       <section className="clients" id="clients">
         <div className="wrap">
           <span className="eyebrow">Clients</span>
@@ -269,7 +284,7 @@ export default function Home() {
                 U.S. Army officer, I lead diverse teams and build the systems
                 organizations keep using long after an engagement ends.
               </p>
-              <h4>EXPERIENCE</h4>
+              <p className="eyebrow">EXPERIENCE</p>
               <div className="xp">
                 {experience.map(([dates, org, desc]) => (
                   <div className="xp-row" key={org}>
@@ -284,7 +299,7 @@ export default function Home() {
                 F1, the Olympic &amp; Paralympic ecosystems, tennis &amp; golf,
                 AFL, NRL, and emerging events.
               </p>
-              <h4>EDUCATION</h4>
+              <p className="eyebrow">EDUCATION</p>
               <div className="edu">
                 <span>
                   <strong>MLS, Sports Law</strong> &mdash; Arizona State
@@ -308,7 +323,7 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">The Newsletter</span>
           <h2>Weekly plays from the front office.</h2>
-          <p>
+          <p className="lead">
             Strategy, analytics, and the business of sports, written weekly on
             Substack.
           </p>

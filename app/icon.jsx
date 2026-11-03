@@ -18,7 +18,7 @@ export default async function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#fbf7f5",
+          background: "#FDFCFA",
         }}
       >
         <img
