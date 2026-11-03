@@ -8,7 +8,7 @@ export const REPORTS = [
     dek: "The first three months of college jersey patches: who bought, what they paid, and what is still for sale.",
     file: "college-jersey-patches-2026.pdf",
     pages: 27,
-    published: "October 30, 2026",
+    published: "November 3, 2026",
   },
   {
     slug: "wnba-market-intelligence-2026",
