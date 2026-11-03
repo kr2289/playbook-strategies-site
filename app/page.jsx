@@ -98,7 +98,6 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="wrap hero-grid">
           <div>
-            <span className="eyebrow">Katherine Rowe · Playbook Strategies</span>
             <h1>I turn data and insight into decisions that drive growth.</h1>
             <p className="hero-lead">{POSITIONING}</p>
             <div className="hero-ctas">
@@ -227,8 +226,6 @@ export default function Home() {
 
       <section className="stech-home" id="sports-tech">
         <div className="wrap">
-          <span className="eyebrow">Sports Tech</span>
-          <div className="bar" />
           <h2>A buyer&apos;s map of the commercial stack.</h2>
           <p className="work-lead">
             Explore vendors, compare capabilities, and see who’s using them.

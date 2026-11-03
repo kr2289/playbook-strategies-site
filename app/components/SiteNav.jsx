@@ -8,7 +8,6 @@ const NAV_LINKS = [
   { href: "/#approach", label: "Approach" },
   { href: "/#work", label: "Work" },
   { href: "/reports", label: "Reports" },
-  { href: "/sports-tech", label: "Sports Tech" },
   { href: "/#about", label: "About" },
 ];
 
@@ -19,7 +18,6 @@ function linkIsActive(href, pathname) {
 
 function sectionLabel(pathname) {
   if (pathname.startsWith("/intelligence")) return "Intelligence";
-  if (pathname.startsWith("/sports-tech")) return "Sports Tech";
   if (pathname.startsWith("/reports")) return "Reports";
   return null;
 }
