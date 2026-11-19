@@ -224,19 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="stech-home" id="sports-tech">
-        <div className="wrap">
-          <h2>A buyer&apos;s map of the commercial stack.</h2>
-          <p className="work-lead">
-            Explore vendors, compare capabilities, and see who’s using them.
-            Profiles are published after review.
-          </p>
-          <a className="btn" href="/sports-tech">
-            Open the directory
-          </a>
-        </div>
-      </section>
-
       <section className="clients" id="clients">
         <div className="wrap">
           <span className="eyebrow">Clients</span>
